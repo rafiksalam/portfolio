@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown, Code, Briefcase, GraduationCap, Award, Folder, Mail, GitHub, Linkedin, Twitter } from 'lucide-react';
 import { FaGithub } from 'react-icons/fa'; // Import GitHub icon from react-icons
+import Model3D from './Model3D'; // Import the new 3D model component
 
 
 const Section = ({ children, title, className = '' }) => (
@@ -187,6 +188,10 @@ const HomePage = () => {
               description="Implemented new features and fixed bugs in a popular open-source project."
             />
           </div>
+          <div className="mt-8">
+            <h3 className="text-2xl font-bold mb-4">3D Model Showcase</h3>
+            <Model3D />
+         </div>
         </Section>
 
         <Section title="Get in Touch" className="text-center">
